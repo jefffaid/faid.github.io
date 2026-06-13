@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional First Aid Training in the UK - Mobile training for care homes, healthcare assistants, telecom engineers & businesses. Certifications available.">
+    <meta name="keywords" content="first aid training UK, care home training, healthcare first aid, telecom first aid, mobile first aid courses">
+    <meta name="author" content="FAID UK">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="FAID UK - First Aid Training 2026">
+    <meta property="og:description" content="Mobile first aid training across the UK. Care homes, healthcare & telecom engineers.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://faid.uk">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "FAID UK",
+      "description": "Professional First Aid Training across the UK",
+      "url": "https://faid.uk",
+      "email": "jeff@faid.uk",
+      "telephone": "+44",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "UK"
+      }
+    }
+    </script>
+    
+    <title>FAID UK | First Aid Training 2026 | Mobile Courses UK</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#home" class="logo">
+                    <span class="logo-icon">🩺</span>
+                    <span class="logo-text">FAID UK</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    First Aid Training
+                    <span class="gradient-text">2026</span>
+                </h1>
+                <p class="hero-subtitle">Mobile Training Across the UK • On-Site Certifications</p>
+                <p class="hero-description">
+                    Professional first aid training for care homes, healthcare assistants, 
+                    telecom engineers, and businesses. We come to you.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                    <a href="#services" class="btn btn-secondary">View Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏥</div>
+                    <h3>Care Homes & Healthcare</h3>
+                    <p>Specialized first aid training for care home staff and healthcare assistants. Patient-centered emergency response.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Telecom Engineers</h3>
+                    <p>Field-specific first aid for telecommunications engineers. High-risk environment safety protocols.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Business Training</h3>
+                    <p>Comprehensive workplace first aid courses for all industries. Regulatory compliance training.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚗</div>
+                    <h3>Mobile Training</h3>
+                    <p>We bring the training to your location. No travel hassle, no venue costs. Fully equipped mobile classroom.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Outstanding mobile training service! Jeff came to our care home and trained all our staff in just one day. Professional, thorough, and incredibly convenient."</p>
+                    <p class="testimonial-author">Sarah Mitchell</p>
+                    <p class="testimonial-role">Care Home Manager</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"As a telecom engineer, I needed specialized first aid training. FAID UK provided exactly what we needed, on-site, without disrupting our work schedule."</p>
+                    <p class="testimonial-author">David Chen</p>
+                    <p class="testimonial-role">Telecom Field Engineer</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"We've used FAID UK for all our healthcare assistant training. Their knowledge of our specific needs is impressive. Highly recommend!"</p>
+                    <p class="testimonial-author">Maria Rodriguez</p>
+                    <p class="testimonial-role">Healthcare Coordinator</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The convenience of mobile training cannot be overstated. No venue hire, no travel - they came to us. Excellent quality and engaging delivery."</p>
+                    <p class="testimonial-author">James Thompson</p>
+                    <p class="testimonial-role">Operations Director</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">What areas do you cover?</div>
+                    <div class="faq-answer">
+                        <p>We provide mobile first aid training across the entire United Kingdom. Our trainers travel to your location, whether it's a care home, office, or field site.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What certifications do you provide?</div>
+                    <div class="faq-answer">
+                        <p>We provide nationally recognized first aid certifications including Emergency First Aid, First Aid at Work, and specialized industry-specific certifications.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How many people can you train at once?</div>
+                    <div class="faq-answer">
+                        <p>We can train groups of 6-12 people per session. For larger groups, we schedule multiple sessions. Course durations vary: Emergency First Aid (1 day), First Aid at Work (3 days), and specialized courses (1-2 days).</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Do you offer refresher courses?</div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer refresher courses for all certifications. We recommend refresher training every 3 years to maintain certification validity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Mobile Training Available Nationwide</h3>
+                    <p>We come to your location. No need for you to travel.</p>
+                    
+                    <div class="contact-details">
+                        <a href="mailto:jeff@faid.uk" class="contact-link">
+                            <span class="icon">✉️</span>
+                            <span>jeff@faid.uk</span>
+                        </a>
+                        <p class="contact-note">Click to email us directly</p>
+                    </div>
+
+                    <div class="features">
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>On-site training</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Nationwide coverage</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Flexible scheduling</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Competitive pricing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 FAID UK. All rights reserved.</p>
+            <p>Professional First Aid Training Across the United Kingdom</p>
+        </div>
+    </footer>
+</body>
+</html>
