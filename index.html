@@ -1,219 +1,694 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional First Aid Training in the UK - Mobile training for care homes, healthcare assistants, telecom engineers & businesses. Certifications available.">
-    <meta name="keywords" content="first aid training UK, care home training, healthcare first aid, telecom first aid, mobile first aid courses">
-    <meta name="author" content="FAID UK">
-    <meta name="robots" content="index, follow">
-    
-    <meta property="og:title" content="FAID UK - First Aid Training 2026">
-    <meta property="og:description" content="Mobile first aid training across the UK. Care homes, healthcare & telecom engineers.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://faid.uk">
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "FAID UK",
-      "description": "Professional First Aid Training across the UK",
-      "url": "https://faid.uk",
-      "email": "jeff@faid.uk",
-      "telephone": "+44",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "UK"
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="FAID UK – Premier mobile first aid training for care homes, healthcare professionals, telecom engineers & businesses. Nationwide on-site certifications." />
+  <meta name="keywords" content="first aid training UK, care home first aid, healthcare first aid, telecom engineer first aid, mobile first aid courses, FAID, first aid UK" />
+  <meta name="author" content="FAID UK" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="FAID UK • First Aid Training 2026" />
+  <meta property="og:description" content="Mobile first aid training across the UK. Care homes, healthcare & telecom engineers." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://faid.uk" />
+  <meta property="og:image" content="https://faid.uk/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title>FAID UK | First Aid Training 2026 | Mobile Courses UK</title>
+
+  <style>
+    /* ---------- GLOBAL RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --rich-black: #0b0f19;
+      --deep-slate: #1e2532;
+      --soft-white: #f5f7fc;
+      --pure-white: #ffffff;
+      --emerald: #10b981;
+      --emerald-glow: #34d399;
+      --coral: #f87171;
+      --glass-bg: rgba(255, 255, 255, 0.03);
+      --glass-border: rgba(255, 255, 255, 0.08);
+      --text-primary: #e9edf5;
+      --text-secondary: #9ca3af;
+      --shadow-sm: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+      --shadow-glow: 0 0 30px rgba(16, 185, 129, 0.25);
+      --radius-xl: 2.5rem;
+      --radius-lg: 2rem;
+      --radius-md: 1.5rem;
+      --radius-sm: 1rem;
+      --transition-smooth: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    body {
+      background: var(--rich-black);
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text-primary);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* subtle animated gradient background */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 20% 30%, rgba(16, 185, 129, 0.08) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 70%, rgba(248, 113, 113, 0.06) 0%, transparent 55%);
+      z-index: -2;
+      pointer-events: none;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    h1, h2, h3 {
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ---------- TYPOGRAPHY & BUTTONS ---------- */
+    .gradient-text {
+      background: linear-gradient(135deg, #34d399 0%, #6ee7b7 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.9rem 2.4rem;
+      border-radius: 3rem;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.3px;
+      transition: var(--transition-smooth);
+      border: 1px solid transparent;
+      backdrop-filter: blur(8px);
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--emerald);
+      color: #0b0f19;
+      box-shadow: 0 8px 22px rgba(16, 185, 129, 0.4);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .btn-primary:hover {
+      background: #34d399;
+      box-shadow: 0 12px 28px rgba(16, 185, 129, 0.6);
+      transform: translateY(-3px);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #e9edf5;
+      backdrop-filter: blur(12px);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.35);
+      transform: translateY(-3px);
+    }
+
+    /* ---------- HEADER & NAVIGATION ---------- */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(11, 15, 25, 0.7);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 0.9rem 0;
+    }
+
+    .navbar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: var(--pure-white);
+    }
+
+    .logo-icon {
+      font-size: 2rem;
+      filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.7));
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 2.5rem;
+      font-weight: 500;
+    }
+
+    .nav-menu a {
+      position: relative;
+      color: var(--text-secondary);
+      transition: color 0.2s;
+      font-size: 1rem;
+    }
+
+    .nav-menu a:hover {
+      color: var(--pure-white);
+    }
+
+    .nav-menu a::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: var(--emerald-glow);
+      transition: width 0.25s ease;
+    }
+
+    .nav-menu a:hover::after {
+      width: 100%;
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      padding: 5rem 0 6rem;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .hero-title {
+      font-size: clamp(3rem, 8vw, 4.8rem);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.3rem;
+      color: #a0aec0;
+      margin-bottom: 1.8rem;
+      letter-spacing: 0.2px;
+    }
+
+    .hero-description {
+      font-size: 1.2rem;
+      color: #b9c2d0;
+      max-width: 650px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ---------- SECTION TITLES ---------- */
+    .section-title {
+      font-size: 2.6rem;
+      font-weight: 650;
+      text-align: center;
+      margin-bottom: 3.5rem;
+      background: linear-gradient(to bottom, #ffffff, #cbd5e1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ---------- SERVICES ---------- */
+    .services {
+      padding: 5rem 0;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background: var(--glass-bg);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-md);
+      padding: 2.2rem 1.8rem;
+      transition: var(--transition-smooth);
+      text-align: left;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      border-color: rgba(16, 185, 129, 0.4);
+      box-shadow: var(--shadow-glow);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .service-icon {
+      font-size: 2.6rem;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.12);
+      padding: 0.8rem;
+      border-radius: 1.2rem;
+    }
+
+    .service-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .service-card p {
+      color: #b0bdd0;
+      font-size: 1rem;
+    }
+
+    /* ---------- TESTIMONIALS ---------- */
+    .testimonials {
+      padding: 5rem 0;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .testimonial-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: var(--radius-sm);
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s;
+    }
+
+    .testimonial-card:hover {
+      border-color: rgba(52, 211, 153, 0.3);
+      background: rgba(16, 185, 129, 0.03);
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      color: #d1d5db;
+      margin-bottom: 1.8rem;
+      font-size: 1.05rem;
+    }
+
+    .testimonial-author {
+      font-weight: 700;
+      color: white;
+    }
+
+    .testimonial-role {
+      color: #9ca3af;
+      font-size: 0.9rem;
+    }
+
+    /* ---------- FAQ ---------- */
+    .faq {
+      padding: 5rem 0;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .faq-item {
+      background: rgba(30, 37, 50, 0.5);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+    }
+
+    .faq-checkbox {
+      display: none;
+    }
+
+    .faq-question {
+      display: block;
+      padding: 1.5rem 2rem;
+      font-weight: 600;
+      font-size: 1.15rem;
+      cursor: pointer;
+      color: #f1f5f9;
+      background: rgba(255,255,255,0.02);
+      transition: background 0.2s;
+      position: relative;
+    }
+
+    .faq-question::after {
+      content: '+';
+      position: absolute;
+      right: 2rem;
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: var(--emerald-glow);
+      transition: transform 0.3s;
+    }
+
+    .faq-checkbox:checked + .faq-question::after {
+      content: '−';
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.45s ease-in-out;
+      background: rgba(0,0,0,0.2);
+    }
+
+    .faq-checkbox:checked ~ .faq-answer {
+      max-height: 250px;
+    }
+
+    .faq-answer p {
+      padding: 0 2rem 1.8rem 2rem;
+      color: #b9c2d0;
+    }
+
+    /* ---------- CONTACT ---------- */
+    .contact {
+      padding: 5rem 0 4rem;
+    }
+
+    .contact-content {
+      max-width: 700px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-lg);
+      padding: 3rem;
+      text-align: center;
+    }
+
+    .contact-info h3 {
+      font-size: 2rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .contact-details {
+      margin: 2.5rem 0;
+    }
+
+    .contact-email {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(to right, #6ee7b7, #34d399);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      word-break: break-word;
+    }
+
+    .contact-note {
+      color: #9ca3af;
+      margin-top: 0.3rem;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2.2rem;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #ccd6e0;
+    }
+
+    .check {
+      color: var(--emerald);
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .footer {
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding: 2.5rem 0;
+      text-align: center;
+      color: #7f8ea3;
+    }
+
+    .footer p {
+      margin: 0.3rem 0;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 768px) {
+      .navbar .container {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .nav-menu {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .hero-title {
+        font-size: 2.8rem;
+      }
+      .contact-email {
+        font-size: 1.6rem;
       }
     }
-    </script>
-    
-    <title>FAID UK | First Aid Training 2026 | Mobile Courses UK</title>
-    <link rel="stylesheet" href="styles.css">
+  </style>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <a href="#home" class="logo">
-                    <span class="logo-icon">🩺</span>
-                    <span class="logo-text">FAID UK</span>
-                </a>
-                <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+  <header class="header">
+    <nav class="navbar">
+      <div class="container">
+        <a href="#home" class="logo">
+          <span class="logo-icon">🩺</span>
+          <span class="logo-text">FAID UK</span>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
+  <main>
     <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    First Aid Training
-                    <span class="gradient-text">2026</span>
-                </h1>
-                <p class="hero-subtitle">Mobile Training Across the UK • On-Site Certifications</p>
-                <p class="hero-description">
-                    Professional first aid training for care homes, healthcare assistants, 
-                    telecom engineers, and businesses. We come to you.
-                </p>
-                <div class="hero-cta">
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
-                    <a href="#services" class="btn btn-secondary">View Services</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            First Aid Training
+            <span class="gradient-text">2026</span>
+          </h1>
+          <p class="hero-subtitle">Mobile Training Across the UK • On-Site Certifications</p>
+          <p class="hero-description">
+            FAID (First Aid UK) delivers elite, mobile first aid training directly to your doorstep. 
+            Tailored for care homes, healthcare assistants, telecom engineers, and forward-thinking businesses.
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+            <a href="#services" class="btn btn-secondary">View Services</a>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🏥</div>
-                    <h3>Care Homes & Healthcare</h3>
-                    <p>Specialized first aid training for care home staff and healthcare assistants. Patient-centered emergency response.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🔧</div>
-                    <h3>Telecom Engineers</h3>
-                    <p>Field-specific first aid for telecommunications engineers. High-risk environment safety protocols.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🏢</div>
-                    <h3>Business Training</h3>
-                    <p>Comprehensive workplace first aid courses for all industries. Regulatory compliance training.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🚗</div>
-                    <h3>Mobile Training</h3>
-                    <p>We bring the training to your location. No travel hassle, no venue costs. Fully equipped mobile classroom.</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">🏥</div>
+            <h3>Care Homes & Healthcare</h3>
+            <p>Specialist first aid for care environments. Person-centred emergency response, moving & handling awareness, and clinical deterioration recognition.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🔧</div>
+            <h3>Telecom Engineers</h3>
+            <p>High-risk field safety for telecoms. Working at height emergencies, electrical incident first aid, and lone worker protocols.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🏢</div>
+            <h3>Business & Corporate</h3>
+            <p>FAID workplace compliance training. Ofqual-regulated qualifications, mental health first aid, and appointed person courses.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🚗</div>
+            <h3>Mobile Training Unit</h3>
+            <p>We arrive fully equipped. No venue costs, minimal disruption. Training at your care home, office, or site anywhere in the UK.</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2 class="section-title">What Our Clients Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"Outstanding mobile training service! Jeff came to our care home and trained all our staff in just one day. Professional, thorough, and incredibly convenient."</p>
-                    <p class="testimonial-author">Sarah Mitchell</p>
-                    <p class="testimonial-role">Care Home Manager</p>
-                </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"As a telecom engineer, I needed specialized first aid training. FAID UK provided exactly what we needed, on-site, without disrupting our work schedule."</p>
-                    <p class="testimonial-author">David Chen</p>
-                    <p class="testimonial-role">Telecom Field Engineer</p>
-                </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"We've used FAID UK for all our healthcare assistant training. Their knowledge of our specific needs is impressive. Highly recommend!"</p>
-                    <p class="testimonial-author">Maria Rodriguez</p>
-                    <p class="testimonial-role">Healthcare Coordinator</p>
-                </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"The convenience of mobile training cannot be overstated. No venue hire, no travel - they came to us. Excellent quality and engaging delivery."</p>
-                    <p class="testimonial-author">James Thompson</p>
-                    <p class="testimonial-role">Operations Director</p>
-                </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"Saved us so much time and money. The trainer was knowledgeable and patient with all our staff. Would definitely use again."</p>
-                    <p class="testimonial-author">Rachel Green</p>
-                    <p class="testimonial-role">Nursing Home Director</p>
-                </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"First class service from start to finish. The mobile setup was perfect for our office. Everyone gained valuable life-saving skills."</p>
-                    <p class="testimonial-author">Tom Hughes</p>
-                    <p class="testimonial-role">Facilities Manager</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title">Trusted by Teams Nationwide</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <p class="testimonial-text">"FAID UK transformed how we train. Jeff came to our dementia care home and certified 14 staff in one day. Empathetic, precise, unforgettable."</p>
+            <p class="testimonial-author">Sarah Mitchell</p>
+            <p class="testimonial-role">Care Home Manager, Surrey</p>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">"As field engineers, we needed realistic scenarios. FAID provided on-site training with our equipment. Exactly what modern telecom teams require."</p>
+            <p class="testimonial-author">David Chen</p>
+            <p class="testimonial-role">Lead Telecom Engineer, Manchester</p>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Our healthcare assistants feel genuinely confident now. The mobile setup was seamless and the certification process digital and fast."</p>
+            <p class="testimonial-author">Maria Rodriguez</p>
+            <p class="testimonial-role">Clinical Coordinator, Bristol</p>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">"No travel, no wasted time. FAID's trainer arrived with everything. Our operations team gained life-saving skills without leaving the depot."</p>
+            <p class="testimonial-author">James Thompson</p>
+            <p class="testimonial-role">Operations Director, Leeds</p>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Outstanding value. We booked FAID for three nursing homes. Consistent quality, and the staff loved the interactive approach."</p>
+            <p class="testimonial-author">Rachel Green</p>
+            <p class="testimonial-role">Regional Director, Birmingham</p>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Modern, fresh, and truly professional. FAID UK is our go-to for mandatory training. The 2026 refresher content was superb."</p>
+            <p class="testimonial-author">Tom Hughes</p>
+            <p class="testimonial-role">Facilities Manager, Edinburgh</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="faq" class="faq">
-        <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <input type="checkbox" id="faq1" class="faq-checkbox">
-                    <label for="faq1" class="faq-question">What areas do you cover?</label>
-                    <div class="faq-answer">
-                        <p>We provide mobile first aid training across the entire United Kingdom. Our trainers travel to your location, whether it's a care home, office, or field site.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <input type="checkbox" id="faq2" class="faq-checkbox">
-                    <label for="faq2" class="faq-question">What certifications do you provide?</label>
-                    <div class="faq-answer">
-                        <p>We provide nationally recognized first aid certifications including Emergency First Aid, First Aid at Work, and specialized industry-specific certifications.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <input type="checkbox" id="faq3" class="faq-checkbox">
-                    <label for="faq3" class="faq-question">How many people can you train at once?</label>
-                    <div class="faq-answer">
-                        <p>We can train groups of 6-12 people per session. For larger groups, we schedule multiple sessions. Course durations vary: Emergency First Aid (1 day), First Aid at Work (3 days), and specialized courses (1-2 days).</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <input type="checkbox" id="faq4" class="faq-checkbox">
-                    <label for="faq4" class="faq-question">Do you offer refresher courses?</label>
-                    <div class="faq-answer">
-                        <p>Yes, we offer refresher courses for all certifications. We recommend refresher training every 3 years to maintain certification validity.</p>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <input type="checkbox" id="faq1" class="faq-checkbox">
+            <label for="faq1" class="faq-question">Where does FAID UK deliver training?</label>
+            <div class="faq-answer">
+              <p>We cover the entire United Kingdom. Our mobile trainers travel to your location — care homes, corporate offices, telecom sites, or community venues.</p>
             </div>
+          </div>
+          <div class="faq-item">
+            <input type="checkbox" id="faq2" class="faq-checkbox">
+            <label for="faq2" class="faq-question">What certifications does FAID provide?</label>
+            <div class="faq-answer">
+              <p>We issue regulated First Aid at Work, Emergency First Aid, and specialised FAID certificates. All meet HSE and CQC requirements, with digital credentials.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <input type="checkbox" id="faq3" class="faq-checkbox">
+            <label for="faq3" class="faq-question">How many delegates per session?</label>
+            <div class="faq-answer">
+              <p>Ideal group size is 6–12 people. We can run multiple sessions back-to-back for larger teams. Courses range from 1-day Emergency First Aid to 3-day comprehensive qualifications.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <input type="checkbox" id="faq4" class="faq-checkbox">
+            <label for="faq4" class="faq-question">Do you offer refresher training?</label>
+            <div class="faq-answer">
+              <p>Absolutely. FAID recommends refresher training every 3 years. We also provide annual skills updates for healthcare and high-risk industries.</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Mobile Training Available Nationwide</h3>
-                    <p>We come to your location. No need for you to travel.</p>
-                    
-                    <div class="contact-details">
-                        <p class="contact-email">jeff@faid.uk</p>
-                        <p class="contact-note">Click to email us directly</p>
-                    </div>
-
-                    <div class="features">
-                        <div class="feature">
-                            <span class="check">✓</span>
-                            <span>On-site training</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✓</span>
-                            <span>Nationwide coverage</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✓</span>
-                            <span>Flexible scheduling</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✓</span>
-                            <span>Competitive pricing</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Start Your Training Journey</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>FAID – First Aid UK</h3>
+            <p style="color: #b9c2d0; margin: 0.5rem 0 1rem;">Mobile training, nationwide. We come to you.</p>
+            
+            <div class="contact-details">
+              <p class="contact-email">jeff@faid.uk</p>
+              <p class="contact-note">📧 Click to email • Response within hours</p>
             </div>
-        </div>
-    </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 FAID UK. All rights reserved.</p>
-            <p>Professional First Aid Training Across the United Kingdom</p>
+            <div class="features">
+              <div class="feature">
+                <span class="check">✓</span>
+                <span>On-site across UK</span>
+              </div>
+              <div class="feature">
+                <span class="check">✓</span>
+                <span>Care home specialists</span>
+              </div>
+              <div class="feature">
+                <span class="check">✓</span>
+                <span>Flexible scheduling</span>
+              </div>
+              <div class="feature">
+                <span class="check">✓</span>
+                <span>Transparent pricing</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 FAID UK. First Aid UK – all rights reserved.</p>
+      <p>Professional mobile first aid training • jeff@faid.uk</p>
+    </div>
+  </footer>
 </body>
 </html>
