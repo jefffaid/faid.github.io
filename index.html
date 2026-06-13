@@ -18,7 +18,7 @@
   <title>FAID UK | First Aid Training 2026 | Mobile Courses UK</title>
 
   <style>
-    /* ---------- GLOBAL RESET & VARIABLES ---------- */
+    /* ---------- GLOBAL RESET & LIGHT THEME VARIABLES ---------- */
     * {
       margin: 0;
       padding: 0;
@@ -26,47 +26,34 @@
     }
 
     :root {
-      --rich-black: #0b0f19;
-      --deep-slate: #1e2532;
-      --soft-white: #f5f7fc;
+      --soft-cream: #f9fafb;
       --pure-white: #ffffff;
-      --emerald: #10b981;
-      --emerald-glow: #34d399;
-      --coral: #f87171;
-      --glass-bg: rgba(255, 255, 255, 0.03);
-      --glass-border: rgba(255, 255, 255, 0.08);
-      --text-primary: #e9edf5;
-      --text-secondary: #9ca3af;
-      --shadow-sm: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
-      --shadow-glow: 0 0 30px rgba(16, 185, 129, 0.25);
+      --slate-50: #f8fafc;
+      --slate-100: #f1f5f9;
+      --slate-200: #e2e8f0;
+      --slate-700: #334155;
+      --slate-800: #1e293b;
+      --slate-900: #0f172a;
+      --emerald: #0d9488;
+      --emerald-light: #14b8a6;
+      --emerald-soft: #ccfbf1;
+      --coral: #f43f5e;
+      --shadow-sm: 0 8px 20px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.02);
+      --shadow-md: 0 15px 30px rgba(0, 0, 0, 0.06);
+      --shadow-glow: 0 12px 28px rgba(13, 148, 136, 0.15);
       --radius-xl: 2.5rem;
       --radius-lg: 2rem;
       --radius-md: 1.5rem;
       --radius-sm: 1rem;
-      --transition-smooth: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+      --transition-smooth: all 0.3s ease;
     }
 
     body {
-      background: var(--rich-black);
+      background: var(--soft-cream);
       font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-      color: var(--text-primary);
-      line-height: 1.5;
+      color: var(--slate-800);
+      line-height: 1.6;
       -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
-    }
-
-    /* subtle animated gradient background */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle at 20% 30%, rgba(16, 185, 129, 0.08) 0%, transparent 50%),
-                  radial-gradient(circle at 80% 70%, rgba(248, 113, 113, 0.06) 0%, transparent 55%);
-      z-index: -2;
-      pointer-events: none;
     }
 
     .container {
@@ -76,8 +63,9 @@
     }
 
     h1, h2, h3 {
-      font-weight: 600;
+      font-weight: 650;
       letter-spacing: -0.02em;
+      color: var(--slate-900);
     }
 
     a {
@@ -87,7 +75,7 @@
 
     /* ---------- TYPOGRAPHY & BUTTONS ---------- */
     .gradient-text {
-      background: linear-gradient(135deg, #34d399 0%, #6ee7b7 70%);
+      background: linear-gradient(135deg, #0d9488, #14b8a6);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -104,45 +92,45 @@
       letter-spacing: 0.3px;
       transition: var(--transition-smooth);
       border: 1px solid transparent;
-      backdrop-filter: blur(8px);
       cursor: pointer;
+      background: white;
     }
 
     .btn-primary {
       background: var(--emerald);
-      color: #0b0f19;
-      box-shadow: 0 8px 22px rgba(16, 185, 129, 0.4);
-      border: 1px solid rgba(255,255,255,0.15);
+      color: white;
+      box-shadow: 0 8px 18px rgba(13, 148, 136, 0.3);
+      border: 1px solid rgba(255,255,255,0.2);
     }
 
     .btn-primary:hover {
-      background: #34d399;
-      box-shadow: 0 12px 28px rgba(16, 185, 129, 0.6);
+      background: #0f766e;
+      box-shadow: 0 12px 24px rgba(13, 148, 136, 0.4);
       transform: translateY(-3px);
     }
 
     .btn-secondary {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: #e9edf5;
-      backdrop-filter: blur(12px);
+      background: white;
+      border: 1px solid #cbd5e1;
+      color: var(--slate-800);
+      box-shadow: var(--shadow-sm);
     }
 
     .btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.1);
-      border-color: rgba(255, 255, 255, 0.35);
+      background: #f1f5f9;
+      border-color: #94a3b8;
       transform: translateY(-3px);
     }
 
-    /* ---------- HEADER & NAVIGATION ---------- */
+    /* ---------- HEADER (light) ---------- */
     .header {
       position: sticky;
       top: 0;
       z-index: 50;
-      background: rgba(11, 15, 25, 0.7);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
       padding: 0.9rem 0;
     }
 
@@ -159,13 +147,12 @@
       gap: 0.5rem;
       font-size: 1.8rem;
       font-weight: 700;
-      letter-spacing: -0.5px;
-      color: var(--pure-white);
+      color: var(--slate-900);
     }
 
     .logo-icon {
       font-size: 2rem;
-      filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.7));
+      filter: drop-shadow(0 4px 6px rgba(13, 148, 136, 0.3));
     }
 
     .nav-menu {
@@ -176,35 +163,20 @@
     }
 
     .nav-menu a {
-      position: relative;
-      color: var(--text-secondary);
+      color: var(--slate-700);
       transition: color 0.2s;
       font-size: 1rem;
     }
 
     .nav-menu a:hover {
-      color: var(--pure-white);
-    }
-
-    .nav-menu a::after {
-      content: '';
-      position: absolute;
-      bottom: -6px;
-      left: 0;
-      width: 0%;
-      height: 2px;
-      background: var(--emerald-glow);
-      transition: width 0.25s ease;
-    }
-
-    .nav-menu a:hover::after {
-      width: 100%;
+      color: var(--emerald);
     }
 
     /* ---------- HERO ---------- */
     .hero {
       padding: 5rem 0 6rem;
       text-align: center;
+      background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
     }
 
     .hero-content {
@@ -217,21 +189,20 @@
       font-weight: 700;
       line-height: 1.1;
       margin-bottom: 1.5rem;
+      color: #0f172a;
     }
 
     .hero-subtitle {
       font-size: 1.3rem;
-      color: #a0aec0;
+      color: #475569;
       margin-bottom: 1.8rem;
-      letter-spacing: 0.2px;
     }
 
     .hero-description {
       font-size: 1.2rem;
-      color: #b9c2d0;
+      color: #334155;
       max-width: 650px;
       margin: 0 auto 2.5rem;
-      line-height: 1.7;
     }
 
     .hero-cta {
@@ -247,15 +218,13 @@
       font-weight: 650;
       text-align: center;
       margin-bottom: 3.5rem;
-      background: linear-gradient(to bottom, #ffffff, #cbd5e1);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color: #0f172a;
     }
 
     /* ---------- SERVICES ---------- */
     .services {
       padding: 5rem 0;
+      background: var(--pure-white);
     }
 
     .services-grid {
@@ -265,28 +234,25 @@
     }
 
     .service-card {
-      background: var(--glass-bg);
-      backdrop-filter: blur(16px);
-      border: 1px solid var(--glass-border);
+      background: white;
+      border: 1px solid #e9eef2;
       border-radius: var(--radius-md);
       padding: 2.2rem 1.8rem;
       transition: var(--transition-smooth);
-      text-align: left;
       box-shadow: var(--shadow-sm);
     }
 
     .service-card:hover {
-      transform: translateY(-10px);
-      border-color: rgba(16, 185, 129, 0.4);
+      transform: translateY(-8px);
+      border-color: #b2dfdb;
       box-shadow: var(--shadow-glow);
-      background: rgba(255, 255, 255, 0.05);
     }
 
     .service-icon {
       font-size: 2.6rem;
       margin-bottom: 1.5rem;
       display: inline-block;
-      background: rgba(16, 185, 129, 0.12);
+      background: #f0fdfa;
       padding: 0.8rem;
       border-radius: 1.2rem;
     }
@@ -294,63 +260,69 @@
     .service-card h3 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
-      color: white;
     }
 
     .service-card p {
-      color: #b0bdd0;
-      font-size: 1rem;
+      color: #475569;
     }
 
-    /* ---------- TESTIMONIALS ---------- */
+    /* ---------- TESTIMONIALS (bigger cards, 3 per row) ---------- */
     .testimonials {
       padding: 5rem 0;
+      background: #f9fafb;
     }
 
     .testimonials-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
     }
 
     .testimonial-card {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-      border-radius: var(--radius-sm);
-      padding: 2rem;
-      backdrop-filter: blur(10px);
-      transition: all 0.3s;
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 1.8rem;
+      padding: 2.4rem 2rem;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.25s;
+      display: flex;
+      flex-direction: column;
     }
 
     .testimonial-card:hover {
-      border-color: rgba(52, 211, 153, 0.3);
-      background: rgba(16, 185, 129, 0.03);
+      border-color: #99f6e4;
+      box-shadow: 0 20px 30px rgba(13, 148, 136, 0.08);
+      transform: translateY(-5px);
     }
 
     .testimonial-text {
+      font-size: 1.1rem;
+      color: #1e293b;
+      margin-bottom: 2rem;
+      line-height: 1.7;
+      flex: 1;
       font-style: italic;
-      color: #d1d5db;
-      margin-bottom: 1.8rem;
-      font-size: 1.05rem;
     }
 
     .testimonial-author {
       font-weight: 700;
-      color: white;
+      color: #0f172a;
+      font-size: 1.1rem;
     }
 
     .testimonial-role {
-      color: #9ca3af;
+      color: #64748b;
       font-size: 0.9rem;
     }
 
-    /* ---------- FAQ ---------- */
+    /* ---------- FAQ (more items, light style) ---------- */
     .faq {
       padding: 5rem 0;
+      background: white;
     }
 
     .faq-container {
-      max-width: 800px;
+      max-width: 850px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -358,11 +330,11 @@
     }
 
     .faq-item {
-      background: rgba(30, 37, 50, 0.5);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: var(--radius-sm);
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 1.4rem;
       overflow: hidden;
+      transition: 0.2s;
     }
 
     .faq-checkbox {
@@ -375,19 +347,19 @@
       font-weight: 600;
       font-size: 1.15rem;
       cursor: pointer;
-      color: #f1f5f9;
-      background: rgba(255,255,255,0.02);
-      transition: background 0.2s;
+      color: #0f172a;
+      background: white;
       position: relative;
+      user-select: none;
     }
 
     .faq-question::after {
       content: '+';
       position: absolute;
       right: 2rem;
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-weight: 300;
-      color: var(--emerald-glow);
+      color: var(--emerald);
       transition: transform 0.3s;
     }
 
@@ -400,37 +372,39 @@
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.45s ease-in-out;
-      background: rgba(0,0,0,0.2);
+      background: #ffffff;
     }
 
     .faq-checkbox:checked ~ .faq-answer {
-      max-height: 250px;
+      max-height: 280px;
     }
 
     .faq-answer p {
       padding: 0 2rem 1.8rem 2rem;
-      color: #b9c2d0;
+      color: #334155;
+      border-top: 1px solid #f1f5f9;
     }
 
     /* ---------- CONTACT ---------- */
     .contact {
       padding: 5rem 0 4rem;
+      background: #f1f5f9;
     }
 
     .contact-content {
       max-width: 700px;
       margin: 0 auto;
-      background: rgba(255, 255, 255, 0.02);
-      backdrop-filter: blur(18px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: white;
+      border: 1px solid #e9eef2;
       border-radius: var(--radius-lg);
       padding: 3rem;
       text-align: center;
+      box-shadow: var(--shadow-md);
     }
 
     .contact-info h3 {
       font-size: 2rem;
-      margin-bottom: 0.7rem;
+      margin-bottom: 0.5rem;
     }
 
     .contact-details {
@@ -440,16 +414,20 @@
     .contact-email {
       font-size: 2rem;
       font-weight: 700;
-      background: linear-gradient(to right, #6ee7b7, #34d399);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color: #0d9488;
       word-break: break-word;
+      text-decoration: underline;
+      text-underline-offset: 6px;
+      transition: color 0.2s;
+    }
+
+    .contact-email:hover {
+      color: #0f766e;
     }
 
     .contact-note {
-      color: #9ca3af;
-      margin-top: 0.3rem;
+      color: #475569;
+      margin-top: 0.4rem;
     }
 
     .features {
@@ -464,28 +442,33 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      color: #ccd6e0;
+      color: #1e293b;
+      font-weight: 500;
     }
 
     .check {
-      color: var(--emerald);
+      color: #0d9488;
       font-weight: bold;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
 
     /* ---------- FOOTER ---------- */
     .footer {
-      border-top: 1px solid rgba(255,255,255,0.05);
+      border-top: 1px solid #e2e8f0;
       padding: 2.5rem 0;
       text-align: center;
-      color: #7f8ea3;
+      color: #475569;
+      background: white;
     }
 
-    .footer p {
-      margin: 0.3rem 0;
+    /* ---------- RESPONSIVE (testimonials stack on mobile) ---------- */
+    @media (max-width: 900px) {
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
     }
 
-    /* ---------- RESPONSIVE ---------- */
     @media (max-width: 768px) {
       .navbar .container {
         flex-direction: column;
@@ -501,6 +484,9 @@
       }
       .contact-email {
         font-size: 1.6rem;
+      }
+      .section-title {
+        font-size: 2.2rem;
       }
     }
   </style>
@@ -643,6 +629,20 @@
               <p>Absolutely. FAID recommends refresher training every 3 years. We also provide annual skills updates for healthcare and high-risk industries.</p>
             </div>
           </div>
+          <div class="faq-item">
+            <input type="checkbox" id="faq5" class="faq-checkbox">
+            <label for="faq5" class="faq-question">How much does mobile training cost?</label>
+            <div class="faq-answer">
+              <p>Our pricing is transparent and based on group size, course type, and location. Contact jeff@faid.uk for a tailored quote. We guarantee competitive rates with no hidden venue fees.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <input type="checkbox" id="faq6" class="faq-checkbox">
+            <label for="faq6" class="faq-question">Are your trainers qualified and insured?</label>
+            <div class="faq-answer">
+              <p>Yes, all FAID instructors hold recognised teaching qualifications, enhanced DBS checks, and full public liability insurance. We maintain the highest standards for every session.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -653,10 +653,10 @@
         <div class="contact-content">
           <div class="contact-info">
             <h3>FAID – First Aid UK</h3>
-            <p style="color: #b9c2d0; margin: 0.5rem 0 1rem;">Mobile training, nationwide. We come to you.</p>
+            <p style="color: #475569; margin: 0.5rem 0 1rem;">Mobile training, nationwide. We come to you.</p>
             
             <div class="contact-details">
-              <p class="contact-email">jeff@faid.uk</p>
+              <a href="mailto:jeff@faid.uk" class="contact-email">jeff@faid.uk</a>
               <p class="contact-note">📧 Click to email • Response within hours</p>
             </div>
 
@@ -687,7 +687,7 @@
   <footer class="footer">
     <div class="container">
       <p>&copy; 2026 FAID UK. First Aid UK – all rights reserved.</p>
-      <p>Professional mobile first aid training • jeff@faid.uk</p>
+      <p>Professional mobile first aid training • <a href="mailto:jeff@faid.uk" style="color:#0d9488;">jeff@faid.uk</a></p>
     </div>
   </footer>
 </body>
